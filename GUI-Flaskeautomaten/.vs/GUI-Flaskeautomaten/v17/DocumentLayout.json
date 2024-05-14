@@ -36,10 +36,11 @@
               "RelativeDocumentMoniker": "GUI-Flaskeautomaten\\Classes\\Controller\\OutputController.cs",
               "ToolTip": "C:\\Users\\Public\\Documents\\Flaskeautomaten\\GUI-Flaskeautomaten\\GUI-Flaskeautomaten\\Classes\\Controller\\OutputController.cs",
               "RelativeToolTip": "GUI-Flaskeautomaten\\Classes\\Controller\\OutputController.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAADUAAAAAAAAA",
+              "ViewState": "AQIAABcAAAAAAAAAAAA1wCIAAAACAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "OverriddenGroupName": "GUI-Flaskeautomaten\\Classes\\Controller",
-              "WhenOpened": "2024-05-14T19:23:00.252Z"
+              "WhenOpened": "2024-05-14T19:23:00.252Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -47,9 +48,9 @@
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Public\\Documents\\Flaskeautomaten\\GUI-Flaskeautomaten\\GUI-Flaskeautomaten\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "GUI-Flaskeautomaten\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\Public\\Documents\\Flaskeautomaten\\GUI-Flaskeautomaten\\GUI-Flaskeautomaten\\MainWindow.xaml.cs*",
-              "RelativeToolTip": "GUI-Flaskeautomaten\\MainWindow.xaml.cs*",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAABAAAA",
+              "ToolTip": "C:\\Users\\Public\\Documents\\Flaskeautomaten\\GUI-Flaskeautomaten\\GUI-Flaskeautomaten\\MainWindow.xaml.cs",
+              "RelativeToolTip": "GUI-Flaskeautomaten\\MainWindow.xaml.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAAAowBAAAAADAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "OverriddenGroupName": "GUI-Flaskeautomaten",
               "WhenOpened": "2024-05-14T19:17:12.546Z",

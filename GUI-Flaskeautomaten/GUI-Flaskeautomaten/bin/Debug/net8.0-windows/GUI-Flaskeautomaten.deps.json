@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "GUI-Flaskeautomaten/1.0.0": {
+        "runtime": {
+          "GUI-Flaskeautomaten.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "GUI-Flaskeautomaten/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

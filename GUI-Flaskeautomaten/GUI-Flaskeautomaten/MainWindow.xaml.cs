@@ -16,7 +16,7 @@ namespace GUI_Flaskeautomaten
 		public MainWindow()
 		{
 			InitializeComponent();
-			PrintToScreen();
+			PrintToScreen(null);
 		}
 
 		private void PantButtonClick(object sender, RoutedEventArgs e)
@@ -56,38 +56,59 @@ namespace GUI_Flaskeautomaten
 			ThreadPool.QueueUserWorkItem(outputController.WriteReceipt);
 		}
 
-		private void PrintToScreen()
+		private void PrintToScreen(object obj)
 		{
-			while (true)
+			OutputController outputController = new OutputController(_pantModel);
+
+			ThreadPool.QueueUserWorkItem(state =>
 			{
-				OutputController outputController = new OutputController(_pantModel);
-
-				string amountA = "";
-				string amountB = "";
-				string amountC = "";
-
-				// Queue the method for execution on the ThreadPool
-				ThreadPool.QueueUserWorkItem(state =>
+				try
 				{
-					// Call the WriteToScreen method
-					var output = outputController.WriteToScreen(outputController.WriteToScreen);
+					var output = outputController.WriteToScreen(obj);
 
-					// Use a synchronization context to marshal the results back to the main thread
-					SynchronizationContext.Current.Post(_ =>
-					{
-						// Retrieve the returned values from the method
-						amountA = output.Item1;
-						amountB = output.Item2;
-						amountC = output.Item3;
+					// Assuming you have UI elements for displaying the counts
+					Pant_A_Text.Text = $"Pant A: {output.Item1}";
+					Pant_B_Text.Text = $"Pant B: {output.Item2}";
+					Pant_C_Text.Text = $"Pant C: {output.Item3}";
+				}
+				catch (Exception ex)
+				{
+					// Handle the exception (e.g., log it or display an error message)
+					Console.WriteLine($"Error: {ex.Message}");
+				}
+			});
+			//while (true)
+			//{
 
-						// Now you can use amountA, amountB, and amountC here
-					}, null);
-				});
+			//	string amountA = "";
+			//	string amountB = "";
+			//	string amountC = "";
 
-				Pant_A_Text.Text = $"Pant A:{amountA}";
-				Pant_B_Text.Text = $"Pant B:{amountB}";
-				Pant_C_Text.Text = $"Pant C:{amountC}";
-			}
+			//	// Queue the method for execution on the ThreadPool
+			//	ThreadPool.QueueUserWorkItem(state =>
+			//	{
+			//		// Call the WriteToScreen method
+			//		var output = outputController.WriteToScreen(outputController.WriteToScreen);
+
+			//		// Use a synchronization context to marshal the results back to the main thread
+			//		SynchronizationContext.Current.Post(_ =>
+			//		{
+			//			// Retrieve the returned values from the method
+			//			amountA = output.Item1;
+			//			amountB = output.Item2;
+			//			amountC = output.Item3;
+			//	Pant_A_Text.Text = $"Pant A:{output.Item1}";
+			//	Pant_B_Text.Text = $"Pant B:{output.Item2}";
+			//	Pant_C_Text.Text = $"Pant B:{output.Item3}";
+
+			//			// Now you can use amountA, amountB, and amountC here
+			//		}, null);
+			//	});
+
+			//	Pant_C_Text.Text = $"Pant C:{amountC}";
+			//}
+
+
 		}
 	}
 }
