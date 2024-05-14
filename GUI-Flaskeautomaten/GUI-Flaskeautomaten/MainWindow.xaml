@@ -5,8 +5,76 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GUI_Flaskeautomaten"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen"
+        Title="MainWindow" Height="800" Width="800">
     <Grid>
-
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <!-- Place the Border inside the nested Grid -->
+            <Border Background="red" CornerRadius="200" Margin="50">
+                <Border.Effect>
+                    <DropShadowEffect Color="Gray" Direction="320" ShadowDepth="5" Opacity="0.8"/>
+                </Border.Effect>
+            </Border>
+            <Border Background="blue" Margin="50" CornerRadius="10" Grid.Column="1">
+                <Border.Effect>
+                    <DropShadowEffect Color="Gray" Direction="320" ShadowDepth="5" Opacity="0.8"/>
+                </Border.Effect>
+                <StackPanel Margin="10">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Grid Grid.Row="0">
+                            <Grid.RowDefinitions>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Grid.Row="0" Foreground="white" FontSize="20" x:Name="PantA">Flaske Pant A:</TextBlock>
+                            <TextBlock Grid.Row="1" Foreground="white" FontSize="20" x:Name="PantB">Flaske Pant B:</TextBlock>
+                            <TextBlock Grid.Row="2" Foreground="white" FontSize="20" x:Name="PantC">Flaske Pant C:</TextBlock>
+                            <TextBlock Grid.Row="3" Foreground="white" FontSize="20" x:Name="Total">Total:</TextBlock>
+                            <TextBlock Grid.Row="0" Grid.Column="1" Foreground="white" FontSize="20" x:Name="Pant_A_Text">x0</TextBlock>
+                            <TextBlock Grid.Row="1" Grid.Column="1" Foreground="white" FontSize="20" x:Name="Pant_B_Text">x0</TextBlock>
+                            <TextBlock Grid.Row="2" Grid.Column="1" Foreground="white" FontSize="20" x:Name="Pant_C_Text">x0</TextBlock>
+                            <TextBlock Grid.Row="3" Grid.Column="1" Foreground="white" FontSize="20" x:Name="Total_Text">0 DKK</TextBlock>
+                        </Grid>
+                        <Button Grid.Row="1" Height="50" FontSize="30" Margin="10" Click="Done_btn">Done</Button>
+                    </Grid>
+                </StackPanel>
+            </Border>
+        </Grid>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Button Margin="60,100,60,10" Grid.Column="0" Click="PantA_btn" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}">
+                <Image Source="/Images/PantA.png" Stretch="Fill"/>
+            </Button>
+            <Button Margin="60,100,60,10" Grid.Column="1" Click="PantB_btn" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}">
+                <Image Source="/Images/PantB.png" Stretch="Fill"/>
+            </Button>
+            <Button Margin="60,100,60,10" Grid.Column="2" Click="PantC_btn" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}">
+                <Image Source="/Images/PantC.png" Stretch="Fill"/>
+            </Button>
+        </Grid>
     </Grid>
 </Window>

@@ -9,4 +9,41 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Images\Barcode.png" />
+    <None Remove="Images\BarcodeIMG.png" />
+    <None Remove="Images\Beer.png" />
+    <None Remove="Images\coca-cola-l.png" />
+    <None Remove="Images\image_2024-05-14_113024687-removebg-preview.png" />
+    <None Remove="Images\image_2024-05-14_113130990-removebg-preview.png" />
+    <None Remove="Images\image_2024-05-14_113219757-removebg-preview.png" />
+    <None Remove="Images\image_2024-05-14_113311456-removebg-preview.png" />
+    <None Remove="Images\PantA.png" />
+    <None Remove="Images\PantB.png" />
+    <None Remove="Images\PantC.png" />
+    <None Remove="Images\Water" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\Barcode.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\BarcodeIMG.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\PantA.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\PantB.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\PantC.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
 </Project>

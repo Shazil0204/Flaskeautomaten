@@ -20,5 +20,25 @@ namespace GUI_Flaskeautomaten
 		{
 			InitializeComponent();
 		}
+
+		private void PantA_btn(object sender, RoutedEventArgs e)
+		{
+
+		}
+
+		private void PantB_btn(object sender, RoutedEventArgs e)
+		{
+
+		}
+
+		private void PantC_btn(object sender, RoutedEventArgs e)
+		{
+
+        }
+
+		private void Done_btn(object sender, RoutedEventArgs e)
+		{
+
+		}
 	}
 }
