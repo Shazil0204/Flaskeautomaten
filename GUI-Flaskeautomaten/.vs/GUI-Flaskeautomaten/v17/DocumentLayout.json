@@ -3,20 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Public\\Documents\\Flaskeautomaten\\GUI-Flaskeautomaten\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5D9667CB-C04D-4B5D-8A87-63E237ED3099}|GUI-Flaskeautomaten\\GUI-Flaskeautomaten.csproj|c:\\users\\public\\documents\\flaskeautomaten\\gui-flaskeautomaten\\gui-flaskeautomaten\\classes\\model\\pant inheritance\\pant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D9667CB-C04D-4B5D-8A87-63E237ED3099}|GUI-Flaskeautomaten\\GUI-Flaskeautomaten.csproj|solutionrelative:gui-flaskeautomaten\\classes\\model\\pant inheritance\\pant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5D9667CB-C04D-4B5D-8A87-63E237ED3099}|GUI-Flaskeautomaten\\GUI-Flaskeautomaten.csproj|c:\\users\\public\\documents\\flaskeautomaten\\gui-flaskeautomaten\\gui-flaskeautomaten\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D9667CB-C04D-4B5D-8A87-63E237ED3099}|GUI-Flaskeautomaten\\GUI-Flaskeautomaten.csproj|solutionrelative:gui-flaskeautomaten\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5D9667CB-C04D-4B5D-8A87-63E237ED3099}|GUI-Flaskeautomaten\\GUI-Flaskeautomaten.csproj|c:\\users\\public\\documents\\flaskeautomaten\\gui-flaskeautomaten\\gui-flaskeautomaten\\classes\\model\\pant inheritance\\panta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D9667CB-C04D-4B5D-8A87-63E237ED3099}|GUI-Flaskeautomaten\\GUI-Flaskeautomaten.csproj|solutionrelative:gui-flaskeautomaten\\classes\\model\\pant inheritance\\panta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D9667CB-C04D-4B5D-8A87-63E237ED3099}|GUI-Flaskeautomaten\\GUI-Flaskeautomaten.csproj|c:\\users\\public\\documents\\flaskeautomaten\\gui-flaskeautomaten\\gui-flaskeautomaten\\classes\\model\\pant inheritance\\pantb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D9667CB-C04D-4B5D-8A87-63E237ED3099}|GUI-Flaskeautomaten\\GUI-Flaskeautomaten.csproj|solutionrelative:gui-flaskeautomaten\\classes\\model\\pant inheritance\\pantb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D9667CB-C04D-4B5D-8A87-63E237ED3099}|GUI-Flaskeautomaten\\GUI-Flaskeautomaten.csproj|c:\\users\\public\\documents\\flaskeautomaten\\gui-flaskeautomaten\\gui-flaskeautomaten\\classes\\model\\pant inheritance\\pantc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D9667CB-C04D-4B5D-8A87-63E237ED3099}|GUI-Flaskeautomaten\\GUI-Flaskeautomaten.csproj|solutionrelative:gui-flaskeautomaten\\classes\\model\\pant inheritance\\pantc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5D9667CB-C04D-4B5D-8A87-63E237ED3099}|GUI-Flaskeautomaten\\GUI-Flaskeautomaten.csproj|c:\\users\\public\\documents\\flaskeautomaten\\gui-flaskeautomaten\\gui-flaskeautomaten\\classes\\controller\\outputcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D9667CB-C04D-4B5D-8A87-63E237ED3099}|GUI-Flaskeautomaten\\GUI-Flaskeautomaten.csproj|solutionrelative:gui-flaskeautomaten\\classes\\controller\\outputcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -39,53 +31,28 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "PantA.cs",
-              "DocumentMoniker": "C:\\Users\\Public\\Documents\\Flaskeautomaten\\GUI-Flaskeautomaten\\GUI-Flaskeautomaten\\Classes\\Model\\Pant inheritance\\PantA.cs",
-              "RelativeDocumentMoniker": "GUI-Flaskeautomaten\\Classes\\Model\\Pant inheritance\\PantA.cs",
-              "ToolTip": "C:\\Users\\Public\\Documents\\Flaskeautomaten\\GUI-Flaskeautomaten\\GUI-Flaskeautomaten\\Classes\\Model\\Pant inheritance\\PantA.cs",
-              "RelativeToolTip": "GUI-Flaskeautomaten\\Classes\\Model\\Pant inheritance\\PantA.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACMAAAAAAAAA",
+              "Title": "OutputController.cs",
+              "DocumentMoniker": "C:\\Users\\Public\\Documents\\Flaskeautomaten\\GUI-Flaskeautomaten\\GUI-Flaskeautomaten\\Classes\\Controller\\OutputController.cs",
+              "RelativeDocumentMoniker": "GUI-Flaskeautomaten\\Classes\\Controller\\OutputController.cs",
+              "ToolTip": "C:\\Users\\Public\\Documents\\Flaskeautomaten\\GUI-Flaskeautomaten\\GUI-Flaskeautomaten\\Classes\\Controller\\OutputController.cs",
+              "RelativeToolTip": "GUI-Flaskeautomaten\\Classes\\Controller\\OutputController.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAADUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T18:58:37.136Z",
-              "EditorCaption": ""
+              "OverriddenGroupName": "GUI-Flaskeautomaten\\Classes\\Controller",
+              "WhenOpened": "2024-05-14T19:23:00.252Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Pant.cs",
-              "DocumentMoniker": "C:\\Users\\Public\\Documents\\Flaskeautomaten\\GUI-Flaskeautomaten\\GUI-Flaskeautomaten\\Classes\\Model\\Pant inheritance\\Pant.cs",
-              "RelativeDocumentMoniker": "GUI-Flaskeautomaten\\Classes\\Model\\Pant inheritance\\Pant.cs",
-              "ToolTip": "C:\\Users\\Public\\Documents\\Flaskeautomaten\\GUI-Flaskeautomaten\\GUI-Flaskeautomaten\\Classes\\Model\\Pant inheritance\\Pant.cs",
-              "RelativeToolTip": "GUI-Flaskeautomaten\\Classes\\Model\\Pant inheritance\\Pant.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAAYAAAA",
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Public\\Documents\\Flaskeautomaten\\GUI-Flaskeautomaten\\GUI-Flaskeautomaten\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "GUI-Flaskeautomaten\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\Public\\Documents\\Flaskeautomaten\\GUI-Flaskeautomaten\\GUI-Flaskeautomaten\\MainWindow.xaml.cs*",
+              "RelativeToolTip": "GUI-Flaskeautomaten\\MainWindow.xaml.cs*",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T18:58:25.916Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "PantC.cs",
-              "DocumentMoniker": "C:\\Users\\Public\\Documents\\Flaskeautomaten\\GUI-Flaskeautomaten\\GUI-Flaskeautomaten\\Classes\\Model\\Pant inheritance\\PantC.cs",
-              "RelativeDocumentMoniker": "GUI-Flaskeautomaten\\Classes\\Model\\Pant inheritance\\PantC.cs",
-              "ToolTip": "C:\\Users\\Public\\Documents\\Flaskeautomaten\\GUI-Flaskeautomaten\\GUI-Flaskeautomaten\\Classes\\Model\\Pant inheritance\\PantC.cs",
-              "RelativeToolTip": "GUI-Flaskeautomaten\\Classes\\Model\\Pant inheritance\\PantC.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T18:56:33.036Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PantB.cs",
-              "DocumentMoniker": "C:\\Users\\Public\\Documents\\Flaskeautomaten\\GUI-Flaskeautomaten\\GUI-Flaskeautomaten\\Classes\\Model\\Pant inheritance\\PantB.cs",
-              "RelativeDocumentMoniker": "GUI-Flaskeautomaten\\Classes\\Model\\Pant inheritance\\PantB.cs",
-              "ToolTip": "C:\\Users\\Public\\Documents\\Flaskeautomaten\\GUI-Flaskeautomaten\\GUI-Flaskeautomaten\\Classes\\Model\\Pant inheritance\\PantB.cs",
-              "RelativeToolTip": "GUI-Flaskeautomaten\\Classes\\Model\\Pant inheritance\\PantB.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACcAAAADAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T18:56:10.979Z",
+              "OverriddenGroupName": "GUI-Flaskeautomaten",
+              "WhenOpened": "2024-05-14T19:17:12.546Z",
               "EditorCaption": ""
             }
           ]

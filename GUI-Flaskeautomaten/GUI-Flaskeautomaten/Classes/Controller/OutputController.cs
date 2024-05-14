@@ -21,7 +21,7 @@ namespace GUI_Flaskeautomaten.Classes
 		string path = "path.example.txt";
         #endregion
 
-        internal void WriteReceipt()
+        internal void WriteReceipt(object obj)
         {
 			using (StreamWriter sw = new StreamWriter(path))
 			{
@@ -29,12 +29,13 @@ namespace GUI_Flaskeautomaten.Classes
 				{
 					sw.WriteLine(item);
 				}
-			
 			}
 		}
 
-		internal string WriteToScreen()
+		internal (string, string, string) WriteToScreen(object obj)
 		{
+
+
 			string AmountA = "";
 			string AmountB = "";
 			string AmountC = "";
@@ -47,8 +48,8 @@ namespace GUI_Flaskeautomaten.Classes
 			foreach (var pant in _pantModel.GetTotalOfType<PantA>())
 			{
 				countA++;
-
-				return AmountA = countA.ToString();
+				
+				AmountA = countA.ToString();
 			}
 
 			foreach (var pant in _pantModel.GetTotalOfType<PantB>()) 
@@ -56,19 +57,17 @@ namespace GUI_Flaskeautomaten.Classes
 
 				countB++;
 
-				return AmountB = countB.ToString();
+				AmountB = countB.ToString();
 			}
 
             foreach (var pant in _pantModel.GetTotalOfType<PantC>())
             {
 				countC++;
 
-				return AmountC = countC.ToString();
+				AmountC = countC.ToString();
 			}
-			return "0";
+			return (AmountA, AmountB, AmountC);
 
         }
-
-
 	}
 }

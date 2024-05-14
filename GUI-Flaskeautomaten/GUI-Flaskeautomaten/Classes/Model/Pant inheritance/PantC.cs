@@ -2,40 +2,18 @@
 
 namespace GUI_Flaskeautomaten.Classes
 {
-    internal class PantC : Pant
-    {
-
-        #region Fields
-        private protected string _material;
-        private protected char _pantType;
-        private protected string _beverageType;
-		#endregion
-
-		#region Properties
-        private protected string Material
-        {
-            get { return _material; }
-            set { _material = value; }
-        }
-        private protected char PantType
-        {
-            get { return _pantType; }
-        }
-		#endregion Properties
-
+	internal class PantC : Pant
+	{
 		#region Constructors
-		/// <summary>
-		/// Constructor to initialize a new instance of PantC with specific material and beverageType.
-		/// </summary>
-		/// <param name="material"></param>
-		/// <param name="beverageType"></param>
+
+		// Constructor to initialize a new instance of PantC with specific material and beverageType.
 		public PantC(string material, string beverageType)
 		{
-			this._pantType = 'C';
+			this._pantType = 'C'; // 'C' denotes the type of this Pant item.
 			this._material = material;
-            this._beverageType = beverageType;
+			this._beverageType = beverageType;
 		}
-        #endregion
-    }
 
+		#endregion
+	}
 }
