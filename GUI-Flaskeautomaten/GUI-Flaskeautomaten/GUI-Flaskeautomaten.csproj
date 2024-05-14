@@ -10,6 +10,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Classes\Model\NewFile1.txt" />
     <None Remove="Images\Barcode.png" />
     <None Remove="Images\BarcodeIMG.png" />
     <None Remove="Images\Beer.png" />

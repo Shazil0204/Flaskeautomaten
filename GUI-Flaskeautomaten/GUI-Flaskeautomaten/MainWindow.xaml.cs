@@ -1,13 +1,8 @@
-﻿using System.Text;
+﻿using GUI_Flaskeautomaten.Classes;
+using GUI_Flaskeautomaten.Classes.Model.Pant_inheritance;
+using System.Threading;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace GUI_Flaskeautomaten
 {
@@ -16,29 +11,47 @@ namespace GUI_Flaskeautomaten
 	/// </summary>
 	public partial class MainWindow : Window
 	{
+		private readonly PantModel _pantModel = new PantModel();
+
 		public MainWindow()
 		{
 			InitializeComponent();
 		}
 
-		private void PantA_btn(object sender, RoutedEventArgs e)
+		private void PantButtonClick(object sender, RoutedEventArgs e)
 		{
+			Button clickedButton = (Button)sender;
+			if (clickedButton != null)
+			{
+				InputController inputController = new InputController(_pantModel);
 
+				string material = inputController.GetRandomValueFromList(new MaterialTypes().GetAllMaterialTypes());
+				string beverage = inputController.GetRandomValueFromList(new BeverageTypes().GetAllBeverages());
+
+				string buttonTag = clickedButton.Tag.ToString() ?? "";
+				switch (buttonTag)
+				{
+					case "PantA":
+						PantA pantA = new PantA(material, beverage);
+						ThreadPool.QueueUserWorkItem(state => inputController.AddPant((Pant)state), pantA);
+						break;
+					case "PantB":
+						PantB pantB = new PantB(material, beverage);
+						ThreadPool.QueueUserWorkItem(state => inputController.AddPant((Pant)state), pantB);
+						break;
+					case "PantC":
+						PantC pantC = new PantC(material, beverage);
+						ThreadPool.QueueUserWorkItem(state => inputController.AddPant((Pant)state), pantC);
+						break;
+					default:
+						break;
+				}
+			}
 		}
 
-		private void PantB_btn(object sender, RoutedEventArgs e)
+		private void DoneButtonClick(object sender, RoutedEventArgs e)
 		{
-
-		}
-
-		private void PantC_btn(object sender, RoutedEventArgs e)
-		{
-
-        }
-
-		private void Done_btn(object sender, RoutedEventArgs e)
-		{
-
+			Pant_A_Text.Text = "";
 		}
 	}
 }
