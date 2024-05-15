@@ -13,19 +13,24 @@ namespace GUI_Flaskeautomaten.Classes
     {
 		#region Fields
 		private PantModel _pantModel;
-
-		internal OutputController(PantModel pantModel)
+        #endregion
+        #region Constructors
+        internal OutputController(PantModel pantModel)
 		{
 			this._pantModel = pantModel;
 		}
-
-		// Path for reciept destination
-		static string directory = Environment.CurrentDirectory;
-		string path = $"{directory}/example.txt";
         #endregion
 
+        #region Methods
+		/// <summary>
+		/// This will create a File for use like a recipt where you can see all the items user have insert into the machines
+		/// </summary>
+		/// <param name="obj"></param>
         internal void WriteReceipt(object obj)
         {
+			// Path for reciept destination
+			string directory = Environment.CurrentDirectory;
+			string path = $"{directory}/example.txt";
 			using (StreamWriter sw = new StreamWriter(path))
 			{
 				foreach (var item in _pantModel.GetTotalItems())
@@ -38,16 +43,10 @@ namespace GUI_Flaskeautomaten.Classes
 			}
 		}
 
-		internal void WriteToScreen()
-		{
-			while(true)
-			{
-				string totalPantA = _pantModel.GetTotalOfType<PantA>().ToString();
-				string totalPantB = _pantModel.GetTotalOfType<PantB>().ToString();
-				string totalPantC = _pantModel.GetTotalOfType<PantC>().ToString();
-			}
-        }
-
+		/// <summary>
+		/// This method is to calculate the total amount by calculating all the basic information 
+		/// </summary>
+		/// <returns></returns>
 		internal float CalculateTotalPrice()
 		{
 			float PantAValue = new PantValues().GetPantValue('A');
@@ -61,5 +60,6 @@ namespace GUI_Flaskeautomaten.Classes
 			float TotalPrice = TotalAValue + TotalBValue + TotalCValue;
 			return TotalPrice;
 		}
-	}
+        #endregion
+    }
 }

@@ -6,10 +6,17 @@ namespace GUI_Flaskeautomaten.Classes.Model
 	// Class to manage pant values based on pant types
 	internal class PantValues
 	{
-		private readonly Dictionary<char, float> _pantTypeToValue; // Dictionary to map pant types to their values
-
-		// Constructor to initialize the dictionary with pant types and values
-		internal PantValues()
+		#region Fields
+		/// <summary>
+		/// Dictionary to map pant types to their values
+		/// </summary>
+		private readonly Dictionary<char, float> _pantTypeToValue;
+        #endregion
+        /// <summary>
+		/// Constructor to initialize the dictionary with pant types and values
+		/// </summary>
+        #region Constructors
+        internal PantValues()
 		{
 			_pantTypeToValue = new Dictionary<char, float>
 			{
@@ -18,9 +25,15 @@ namespace GUI_Flaskeautomaten.Classes.Model
 				{ 'C', 3 }
 			};
 		}
+        #endregion
 
-		// Method to get the pant value based on the pant type
-		internal float GetPantValue(char pantType)
+        #region Methods
+        /// <summary>
+		/// Method to get the pant value based on the pant type
+		/// </summary>
+		/// <param name="pantType"></param>
+		/// <returns></returns>
+        internal float GetPantValue(char pantType)
 		{
 			try
 			{
@@ -39,6 +52,7 @@ namespace GUI_Flaskeautomaten.Classes.Model
 				throw;
 			}
 		}
+        #endregion
 
-	}
+    }
 }

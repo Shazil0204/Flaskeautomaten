@@ -6,15 +6,26 @@ using System.Threading.Tasks;
 
 namespace GUI_Flaskeautomaten.Interfaces
 {
-	// Interface defining properties for items with pant-related information
+	/// <summary>
+	/// Interface defining properties for items with pant-related information
+	/// </summary>
 	internal interface IPant
 	{
 		#region Properties
-		string Material { get; set; } // Property to get or set the material of the item
+		/// <summary>
+		/// Property to get or set the material of the item
+		/// </summary>
+		string Material { get; set; } 
 
-		string BeverageType { get; set; } // Property to get or set the beverage type of the item
+		/// <summary>
+		/// Property to get or set the beverage type of the item
+		/// </summary>
+		string BeverageType { get; set; } 
 
-		char PantType { get; } // Property to get the pant type of the item
+		/// <summary>
+		/// Property to get the pant type of the item
+		/// </summary>
+		char PantType { get; } 
 		#endregion
 	}
 }

@@ -7,43 +7,59 @@ namespace GUI_Flaskeautomaten.Classes.Model.Pant_inheritance
 	{
 		#region Fields
 
-		// The material of the pant item (e.g., plastic, glass).
+		/// <summary>
+		/// The material of the pant item (e.g., plastic, glass).
+		/// </summary>
 		private protected string _material = "";
 
-		// The type of pant (e.g., can, bottle), represented by a character.
+		/// <summary>
+		/// The type of pant (e.g., can, bottle), represented by a character.
+		/// </summary>
 		private protected char _pantType;
 
-		// The type of beverage the pant item contains (e.g., soda, beer).
+		/// <summary>
+		/// The type of beverage the pant item contains (e.g., soda, beer).
+		/// </summary>
 		private protected string _beverageType = "";
 
-		// Unique serial number for the beverage
+		/// <summary>
+		/// Unique serial number for the beverage
+		/// </summary>
 		private protected string _serialNumber = "";
 
 		#endregion
 
-		#region IPant Implementation
+		#region Properties
 
-		// Gets or sets the material of the pant item.
+		/// <summary>
+		/// Gets or sets the material of the pant item.
+		/// </summary>
 		public string Material
 		{
 			get { return _material; }
 			set { _material = value; }
 		}
 
-		// Gets the type of the pant item.
+		/// <summary>
+		/// Gets the type of the pant item.
+		/// </summary>
 		public char PantType
 		{
 			get { return _pantType; }
 		}
 
-		// Gets or sets the type of beverage the pant item contains.
+		/// <summary>
+		/// Gets or sets the type of beverage the pant item contains.
+		/// </summary>
 		public string BeverageType
 		{
 			get { return _beverageType; }
 			set { _beverageType = value; }
 		}
 
-		// Gets the serial number for the beverage
+		/// <summary>
+		/// Gets the serial number for the beverage
+		/// </summary>
 		public string SerialNumber
 		{
 			get { return _serialNumber; }

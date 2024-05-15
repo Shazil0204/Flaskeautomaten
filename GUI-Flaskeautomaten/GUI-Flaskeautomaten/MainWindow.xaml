@@ -9,6 +9,7 @@
         WindowStartupLocation="CenterScreen"
         Title="MainWindow" Height="800" Width="800">
     <Grid>
+        <!-- Grid for the upper section of the window -->
         <Grid.RowDefinitions>
             <RowDefinition/>
             <RowDefinition />
@@ -18,19 +19,22 @@
                 <ColumnDefinition/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
-            <!-- Place the Border inside the nested Grid -->
-            <Border Background="red" CornerRadius="200" Margin="50">
+            <!-- Red border representing the first section -->
+            <Border Background="gray" BorderBrush="Black" BorderThickness="10" CornerRadius="200" Margin="50">
                 <Border.Effect>
                     <DropShadowEffect Color="Gray" Direction="320" ShadowDepth="5" Opacity="0.8"/>
                 </Border.Effect>
             </Border>
+            <!-- Blue border representing the second section -->
             <Border Background="blue" Margin="50" CornerRadius="10" Grid.Column="1">
                 <Border.Effect>
                     <DropShadowEffect Color="Gray" Direction="320" ShadowDepth="5" Opacity="0.8"/>
                 </Border.Effect>
                 <StackPanel Margin="10">
+                    <!-- I can't explain you this Grid system because you won't understand-->
                     <Grid>
                         <Grid.RowDefinitions>
+                            <RowDefinition/>
                             <RowDefinition/>
                             <RowDefinition/>
                         </Grid.RowDefinitions>
@@ -46,26 +50,32 @@
                                 <ColumnDefinition/>
                                 <ColumnDefinition/>
                             </Grid.ColumnDefinitions>
+                            <!-- Text blocks for displaying pant types and total -->
                             <TextBlock Grid.Row="0" Foreground="white" FontSize="20">Flaske Pant A:</TextBlock>
                             <TextBlock Grid.Row="1" Foreground="white" FontSize="20">Flaske Pant B:</TextBlock>
                             <TextBlock Grid.Row="2" Foreground="white" FontSize="20">Flaske Pant C:</TextBlock>
                             <TextBlock Grid.Row="3" Foreground="white" FontSize="20">Total:</TextBlock>
+                            <!-- Text blocks for displaying pant quantities and total price -->
                             <TextBlock Grid.Row="0" Grid.Column="1" Foreground="white" FontSize="20" x:Name="Pant_A_Text">x0</TextBlock>
                             <TextBlock Grid.Row="1" Grid.Column="1" Foreground="white" FontSize="20" x:Name="Pant_B_Text">x0</TextBlock>
                             <TextBlock Grid.Row="2" Grid.Column="1" Foreground="white" FontSize="20" x:Name="Pant_C_Text">x0</TextBlock>
                             <TextBlock Grid.Row="3" Grid.Column="1" Foreground="white" FontSize="20" x:Name="Total_Text">0 DKK</TextBlock>
                         </Grid>
+                        <!-- Button for finalizing the process -->
                         <Button Grid.Row="1" Height="50" FontSize="30" Margin="10" Click="DoneButtonClick">Done</Button>
+                        <TextBlock Grid.Row="2" x:Name="DoneMessage" Visibility="hidden" FontSize="30" Margin="0, 25, 0, 0" Foreground="white">Recipt is Generated</TextBlock>
                     </Grid>
                 </StackPanel>
             </Border>
         </Grid>
+        <!-- Grid for the lower section of the window -->
         <Grid Grid.Row="1">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
                 <ColumnDefinition/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
+            <!-- Buttons for selecting pant types -->
             <Button Margin="60,100,60,10" Grid.Column="0" Click="PantButtonClick" Tag="PantA" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}">
                 <Image Source="/Images/PantA.png" Stretch="Fill"/>
             </Button>

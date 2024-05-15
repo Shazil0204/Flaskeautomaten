@@ -10,13 +10,17 @@ namespace GUI_Flaskeautomaten.Classes
 {
     internal class InputController
     {
+        #region Fields
         private PantModel _pantModel;
-        Random random = new Random();
+        private Random random = new Random();
+        #endregion
 
+        #region Constructors
         internal InputController(PantModel pantModel)
         {
             this._pantModel = pantModel;
         }
+        #endregion
 
         #region Methods
         /// <summary>
@@ -28,12 +32,26 @@ namespace GUI_Flaskeautomaten.Classes
             _pantModel.AddItem(pant);
         }
 
+        internal void RemovePant()
+        {
+            _pantModel.RemoveItem();
+        }
+
+        /// <summary>
+        /// This will choose a random value from beverageTypes and MaterialTypes
+        /// </summary>
+        /// <param name="options"></param>
+        /// <returns></returns>
         internal string GetRandomValueFromList(List<string> options)
         {
             int randomValue = random.Next(options.Count);
             return options[randomValue]; 
 		}
 
+        /// <summary>
+        /// This method is used to create a Random Serial Number for each Items
+        /// </summary>
+        /// <returns></returns>
         internal string CalculateSerialNumber()
         {
             int year = random.Next(23, 25);

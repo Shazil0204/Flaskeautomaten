@@ -6,7 +6,12 @@ namespace GUI_Flaskeautomaten.Classes
 	{
 		#region Constructors
 
-		// Constructor to initialize a new instance of PantA with specific material and beverageType.
+		/// <summary>
+		/// Constructor to initialize a new instance of PantA with specific material and beverageType.
+		/// </summary>
+		/// <param name="material"></param>
+		/// <param name="beverageType"></param>
+		/// <param name="serialNumber"></param>
 		public PantA(string material, string beverageType, string serialNumber)
 		{
 			this._pantType = 'A'; // 'A' denotes the type of this Pant item.

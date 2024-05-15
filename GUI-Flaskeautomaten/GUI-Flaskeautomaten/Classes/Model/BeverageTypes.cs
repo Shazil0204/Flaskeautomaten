@@ -3,9 +3,17 @@
 	// Class to manage different beverage types
 	internal class BeverageTypes
 	{
-		private List<string> _beverageTypes; // List to store beverage types
+		#region Fields
+		/// <summary>
+		/// List to store beverage types
+		/// </summary>
+		private List<string> _beverageTypes;
+		#endregion
 
-		// Constructor to initialize the list
+		#region Constructors
+		/// <summary>
+		/// Constructor to initialize the list
+		/// </summary>
 		internal BeverageTypes()
 		{
 			_beverageTypes = new List<string>()
@@ -15,11 +23,17 @@
 				"Water"
 			};
 		}
+		#endregion
 
-		// Method to retrieve all beverage types
+		#region Methods
+		/// <summary>
+		/// Method to retrieve all beverage types
+		/// </summary>
+		/// <returns></returns>
 		internal List<string> GetAllBeverages()
 		{
 			return _beverageTypes;
 		}
-	}
+        #endregion
+    }
 }

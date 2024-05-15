@@ -7,35 +7,58 @@ namespace GUI_Flaskeautomaten.Classes
 	internal class PantModel
 	{
 		#region Fields
-		private ConcurrentBag<Pant> _pantList; // List to store items with pant-related information
+		/// <summary>
+		/// List to store items with pant-related information
+		/// </summary>
+		private ConcurrentBag<Pant> _pantList;
 		#endregion
 
 		#region Constructors
+		/// <summary>
+		/// Initialize the list in the constructor
+		/// </summary>
 		internal PantModel()
 		{
-			_pantList = new ConcurrentBag<Pant>(); // Initialize the list in the constructor
+			_pantList = new ConcurrentBag<Pant>();
 		}
 		#endregion
 
 		#region Methods
-		// Method to add a pant-related item to the list
+		/// <summary>
+		/// Method to add a pant-related item to the list
+		/// </summary>
+		/// <param name="pantToAdd"></param>
 		internal void AddItem(Pant pantToAdd)
 		{
 			_pantList.Add(pantToAdd);
 		}
 
-		// Method to retrieve all items with pant-related information
+		/// <summary>
+		/// This is going to clear all the data from the lists
+		/// </summary>
+		internal void RemoveItem()
+		{
+			_pantList.Clear();
+		}
+
+		/// <summary>
+		/// Method to retrieve all items with pant-related information
+		/// </summary>
+		/// <returns></returns>
 		internal ConcurrentBag<Pant> GetTotalItems()
 		{
 			return _pantList;
 		}
 
-		// Method to retrieve all items of a specific type with pant-related information
+		/// <summary>
+		/// Method to retrieve all items of a specific type with pant-related information
+		/// </summary>
+		/// <typeparam name="T"></typeparam>
+		/// <returns></returns>
 		internal int GetTotalOfType<T>() where T : Pant
 		{
 			return _pantList.OfType<T>().ToList().Count;
 		}
-
 
 		#endregion
 	}

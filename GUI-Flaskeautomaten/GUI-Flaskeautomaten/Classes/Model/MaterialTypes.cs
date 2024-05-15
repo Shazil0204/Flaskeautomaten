@@ -3,10 +3,18 @@
 	// Class to manage different material types
 	internal class MaterialTypes
 	{
-		private List<string> _materialTypes; // List to store material types
+        #region Fields
+		/// <summary>
+		/// List to store material types
+		/// </summary>
+        private List<string> _materialTypes;
+        #endregion
 
-		// Constructor to initialize the list
-		internal MaterialTypes()
+        #region Constructors
+		/// <summary>
+		/// Constructor to initialize the list
+		/// </summary>
+        internal MaterialTypes()
 		{
 			_materialTypes = new List<string>()
 			{
@@ -15,11 +23,17 @@
 				"Glass"
 			};
 		}
+		#endregion
 
-		// Method to retrieve all material types
-		internal List<string> GetAllMaterialTypes()
+		#region Methods
+		/// <summary>
+		/// Method to retrieve all material types
+		/// </summary>
+		/// <returns></returns>
+		internal List<string> GetAllMaterials()
 		{
 			return _materialTypes;
 		}
-	}
+        #endregion
+    }
 }
