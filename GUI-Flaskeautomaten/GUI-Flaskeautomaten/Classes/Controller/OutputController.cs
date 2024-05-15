@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
+using System.Windows;
 
 namespace GUI_Flaskeautomaten.Classes
 {
@@ -32,41 +33,15 @@ namespace GUI_Flaskeautomaten.Classes
 			}
 		}
 
-		internal (string, string, string) WriteToScreen(object obj)
+		internal string[] WriteToScreen()
 		{
+			string totalPantA = _pantModel.GetTotalOfType<PantA>().Count.ToString();
+			string totalPantB = _pantModel.GetTotalOfType<PantB>().Count.ToString();
+			string totalPantC = _pantModel.GetTotalOfType<PantC>().Count.ToString();
 
+			string[] Manike = [totalPantA, totalPantB, totalPantC];
 
-			string AmountA = "";
-			string AmountB = "";
-			string AmountC = "";
-
-			int countA = 0;
-			int countB = 0;
-			int countC = 0;
-
-
-			foreach (var pant in _pantModel.GetTotalOfType<PantA>())
-			{
-				countA++;
-				
-				AmountA = countA.ToString();
-			}
-
-			foreach (var pant in _pantModel.GetTotalOfType<PantB>()) 
-			{
-
-				countB++;
-
-				AmountB = countB.ToString();
-			}
-
-            foreach (var pant in _pantModel.GetTotalOfType<PantC>())
-            {
-				countC++;
-
-				AmountC = countC.ToString();
-			}
-			return (AmountA, AmountB, AmountC);
+			return Manike;
 
         }
 	}

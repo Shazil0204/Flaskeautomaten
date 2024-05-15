@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Public\\Documents\\Flaskeautomaten\\GUI-Flaskeautomaten\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5D9667CB-C04D-4B5D-8A87-63E237ED3099}|GUI-Flaskeautomaten\\GUI-Flaskeautomaten.csproj|c:\\users\\public\\documents\\flaskeautomaten\\gui-flaskeautomaten\\gui-flaskeautomaten\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D9667CB-C04D-4B5D-8A87-63E237ED3099}|GUI-Flaskeautomaten\\GUI-Flaskeautomaten.csproj|solutionrelative:gui-flaskeautomaten\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5D9667CB-C04D-4B5D-8A87-63E237ED3099}|GUI-Flaskeautomaten\\GUI-Flaskeautomaten.csproj|c:\\users\\public\\documents\\flaskeautomaten\\gui-flaskeautomaten\\gui-flaskeautomaten\\classes\\controller\\outputcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5D9667CB-C04D-4B5D-8A87-63E237ED3099}|GUI-Flaskeautomaten\\GUI-Flaskeautomaten.csproj|solutionrelative:gui-flaskeautomaten\\classes\\controller\\outputcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D9667CB-C04D-4B5D-8A87-63E237ED3099}|GUI-Flaskeautomaten\\GUI-Flaskeautomaten.csproj|c:\\users\\public\\documents\\flaskeautomaten\\gui-flaskeautomaten\\gui-flaskeautomaten\\classes\\model\\pantmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D9667CB-C04D-4B5D-8A87-63E237ED3099}|GUI-Flaskeautomaten\\GUI-Flaskeautomaten.csproj|solutionrelative:gui-flaskeautomaten\\classes\\model\\pantmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D9667CB-C04D-4B5D-8A87-63E237ED3099}|GUI-Flaskeautomaten\\GUI-Flaskeautomaten.csproj|c:\\users\\public\\documents\\flaskeautomaten\\gui-flaskeautomaten\\gui-flaskeautomaten\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D9667CB-C04D-4B5D-8A87-63E237ED3099}|GUI-Flaskeautomaten\\GUI-Flaskeautomaten.csproj|solutionrelative:gui-flaskeautomaten\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,12 +35,25 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "PantModel.cs",
+              "DocumentMoniker": "C:\\Users\\Public\\Documents\\Flaskeautomaten\\GUI-Flaskeautomaten\\GUI-Flaskeautomaten\\Classes\\Model\\PantModel.cs",
+              "RelativeDocumentMoniker": "GUI-Flaskeautomaten\\Classes\\Model\\PantModel.cs",
+              "ToolTip": "C:\\Users\\Public\\Documents\\Flaskeautomaten\\GUI-Flaskeautomaten\\GUI-Flaskeautomaten\\Classes\\Model\\PantModel.cs",
+              "RelativeToolTip": "GUI-Flaskeautomaten\\Classes\\Model\\PantModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAASwBYAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T06:17:31.648Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "OutputController.cs",
               "DocumentMoniker": "C:\\Users\\Public\\Documents\\Flaskeautomaten\\GUI-Flaskeautomaten\\GUI-Flaskeautomaten\\Classes\\Controller\\OutputController.cs",
               "RelativeDocumentMoniker": "GUI-Flaskeautomaten\\Classes\\Controller\\OutputController.cs",
               "ToolTip": "C:\\Users\\Public\\Documents\\Flaskeautomaten\\GUI-Flaskeautomaten\\GUI-Flaskeautomaten\\Classes\\Controller\\OutputController.cs",
               "RelativeToolTip": "GUI-Flaskeautomaten\\Classes\\Controller\\OutputController.cs",
-              "ViewState": "AQIAABcAAAAAAAAAAAA1wCIAAAACAAAA",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAQwA0AAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "OverriddenGroupName": "GUI-Flaskeautomaten\\Classes\\Controller",
               "WhenOpened": "2024-05-14T19:23:00.252Z",
@@ -44,13 +61,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Public\\Documents\\Flaskeautomaten\\GUI-Flaskeautomaten\\GUI-Flaskeautomaten\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "GUI-Flaskeautomaten\\MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\Public\\Documents\\Flaskeautomaten\\GUI-Flaskeautomaten\\GUI-Flaskeautomaten\\MainWindow.xaml.cs",
               "RelativeToolTip": "GUI-Flaskeautomaten\\MainWindow.xaml.cs",
-              "ViewState": "AQIAACQAAAAAAAAAAAAowBAAAAADAAAA",
+              "ViewState": "AQIAABoAAAAAAAAAAAAswEAAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "OverriddenGroupName": "GUI-Flaskeautomaten",
               "WhenOpened": "2024-05-14T19:17:12.546Z",
