@@ -6,25 +6,25 @@ namespace GUI_Flaskeautomaten.Classes.Model
 	// Class to manage pant values based on pant types
 	internal class PantValues
 	{
-		private readonly Dictionary<char, int> _pantTypeToValue; // Dictionary to map pant types to their values
+		private readonly Dictionary<char, float> _pantTypeToValue; // Dictionary to map pant types to their values
 
 		// Constructor to initialize the dictionary with pant types and values
 		internal PantValues()
 		{
-			_pantTypeToValue = new Dictionary<char, int>
+			_pantTypeToValue = new Dictionary<char, float>
 			{
 				{ 'A', 1 },
-				{ 'B', 2 },
+				{ 'B', 1.5f },
 				{ 'C', 3 }
 			};
 		}
 
 		// Method to get the pant value based on the pant type
-		internal int GetPantValue(char pantType)
+		internal float GetPantValue(char pantType)
 		{
 			try
 			{
-				if (_pantTypeToValue.TryGetValue(pantType, out int value))
+				if (_pantTypeToValue.TryGetValue(pantType, out float value))
 				{
 					return value;
 				}

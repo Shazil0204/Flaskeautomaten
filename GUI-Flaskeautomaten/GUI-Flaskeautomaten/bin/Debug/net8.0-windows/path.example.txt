@@ -1,8 +1,0 @@
-GUI_Flaskeautomaten.Classes.PantA
-GUI_Flaskeautomaten.Classes.PantA
-GUI_Flaskeautomaten.Classes.PantA
-GUI_Flaskeautomaten.Classes.PantA
-GUI_Flaskeautomaten.Classes.PantB
-GUI_Flaskeautomaten.Classes.PantB
-GUI_Flaskeautomaten.Classes.PantB
-GUI_Flaskeautomaten.Classes.PantC

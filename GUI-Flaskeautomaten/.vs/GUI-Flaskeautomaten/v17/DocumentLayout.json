@@ -7,8 +7,12 @@
       "RelativeMoniker": "D:0:0:{5D9667CB-C04D-4B5D-8A87-63E237ED3099}|GUI-Flaskeautomaten\\GUI-Flaskeautomaten.csproj|solutionrelative:gui-flaskeautomaten\\classes\\controller\\outputcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5D9667CB-C04D-4B5D-8A87-63E237ED3099}|GUI-Flaskeautomaten\\GUI-Flaskeautomaten.csproj|c:\\users\\public\\documents\\flaskeautomaten\\gui-flaskeautomaten\\gui-flaskeautomaten\\classes\\model\\pantmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D9667CB-C04D-4B5D-8A87-63E237ED3099}|GUI-Flaskeautomaten\\GUI-Flaskeautomaten.csproj|solutionrelative:gui-flaskeautomaten\\classes\\model\\pantmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5D9667CB-C04D-4B5D-8A87-63E237ED3099}|GUI-Flaskeautomaten\\GUI-Flaskeautomaten.csproj|c:\\users\\public\\documents\\flaskeautomaten\\gui-flaskeautomaten\\gui-flaskeautomaten\\classes\\controller\\inputcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D9667CB-C04D-4B5D-8A87-63E237ED3099}|GUI-Flaskeautomaten\\GUI-Flaskeautomaten.csproj|solutionrelative:gui-flaskeautomaten\\classes\\controller\\inputcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D9667CB-C04D-4B5D-8A87-63E237ED3099}|GUI-Flaskeautomaten\\GUI-Flaskeautomaten.csproj|c:\\users\\public\\documents\\flaskeautomaten\\gui-flaskeautomaten\\gui-flaskeautomaten\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{5D9667CB-C04D-4B5D-8A87-63E237ED3099}|GUI-Flaskeautomaten\\GUI-Flaskeautomaten.csproj|solutionrelative:gui-flaskeautomaten\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5D9667CB-C04D-4B5D-8A87-63E237ED3099}|GUI-Flaskeautomaten\\GUI-Flaskeautomaten.csproj|c:\\users\\public\\documents\\flaskeautomaten\\gui-flaskeautomaten\\gui-flaskeautomaten\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -35,14 +39,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "PantModel.cs",
-              "DocumentMoniker": "C:\\Users\\Public\\Documents\\Flaskeautomaten\\GUI-Flaskeautomaten\\GUI-Flaskeautomaten\\Classes\\Model\\PantModel.cs",
-              "RelativeDocumentMoniker": "GUI-Flaskeautomaten\\Classes\\Model\\PantModel.cs",
-              "ToolTip": "C:\\Users\\Public\\Documents\\Flaskeautomaten\\GUI-Flaskeautomaten\\GUI-Flaskeautomaten\\Classes\\Model\\PantModel.cs",
-              "RelativeToolTip": "GUI-Flaskeautomaten\\Classes\\Model\\PantModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAASwBYAAAAcAAAA",
+              "Title": "InputController.cs",
+              "DocumentMoniker": "C:\\Users\\Public\\Documents\\Flaskeautomaten\\GUI-Flaskeautomaten\\GUI-Flaskeautomaten\\Classes\\Controller\\InputController.cs",
+              "RelativeDocumentMoniker": "GUI-Flaskeautomaten\\Classes\\Controller\\InputController.cs",
+              "ToolTip": "C:\\Users\\Public\\Documents\\Flaskeautomaten\\GUI-Flaskeautomaten\\GUI-Flaskeautomaten\\Classes\\Controller\\InputController.cs",
+              "RelativeToolTip": "GUI-Flaskeautomaten\\Classes\\Controller\\InputController.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAADIAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-15T06:17:31.648Z",
+              "WhenOpened": "2024-05-15T09:07:06.183Z",
               "EditorCaption": ""
             },
             {
@@ -53,24 +57,34 @@
               "RelativeDocumentMoniker": "GUI-Flaskeautomaten\\Classes\\Controller\\OutputController.cs",
               "ToolTip": "C:\\Users\\Public\\Documents\\Flaskeautomaten\\GUI-Flaskeautomaten\\GUI-Flaskeautomaten\\Classes\\Controller\\OutputController.cs",
               "RelativeToolTip": "GUI-Flaskeautomaten\\Classes\\Controller\\OutputController.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAQwA0AAAAfAAAA",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAiwCEAAAB0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "OverriddenGroupName": "GUI-Flaskeautomaten\\Classes\\Controller",
-              "WhenOpened": "2024-05-14T19:23:00.252Z",
+              "WhenOpened": "2024-05-15T08:40:36.975Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Public\\Documents\\Flaskeautomaten\\GUI-Flaskeautomaten\\GUI-Flaskeautomaten\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "GUI-Flaskeautomaten\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\Public\\Documents\\Flaskeautomaten\\GUI-Flaskeautomaten\\GUI-Flaskeautomaten\\MainWindow.xaml",
+              "RelativeToolTip": "GUI-Flaskeautomaten\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-15T08:30:20.739Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Public\\Documents\\Flaskeautomaten\\GUI-Flaskeautomaten\\GUI-Flaskeautomaten\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "GUI-Flaskeautomaten\\MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\Public\\Documents\\Flaskeautomaten\\GUI-Flaskeautomaten\\GUI-Flaskeautomaten\\MainWindow.xaml.cs",
               "RelativeToolTip": "GUI-Flaskeautomaten\\MainWindow.xaml.cs",
-              "ViewState": "AQIAABoAAAAAAAAAAAAswEAAAAAFAAAA",
+              "ViewState": "AQIAACsAAAAAAAAAAAAAAEcAAABDAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "OverriddenGroupName": "GUI-Flaskeautomaten",
-              "WhenOpened": "2024-05-14T19:17:12.546Z",
+              "WhenOpened": "2024-05-15T08:21:59.595Z",
               "EditorCaption": ""
             }
           ]

@@ -1,0 +1,5 @@
+2411-522282 C Glass 3
+2404-193169 B Glass 1,5
+2306-533415 A Metal 1
+Total price: 
+5,5

@@ -10,8 +10,6 @@ namespace GUI_Flaskeautomaten.Interfaces
 	internal interface IPant
 	{
 		#region Properties
-		float PantValue { get; } // Property to get the pant value
-
 		string Material { get; set; } // Property to get or set the material of the item
 
 		string BeverageType { get; set; } // Property to get or set the beverage type of the item

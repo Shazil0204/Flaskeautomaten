@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.IO;
 using System.Windows;
+using GUI_Flaskeautomaten.Classes.Model;
 
 namespace GUI_Flaskeautomaten.Classes
 {
@@ -19,7 +20,8 @@ namespace GUI_Flaskeautomaten.Classes
 		}
 
 		// Path for reciept destination
-		string path = "path.example.txt";
+		static string directory = Environment.CurrentDirectory;
+		string path = $"{directory}/example.txt";
         #endregion
 
         internal void WriteReceipt(object obj)
@@ -28,21 +30,36 @@ namespace GUI_Flaskeautomaten.Classes
 			{
 				foreach (var item in _pantModel.GetTotalItems())
 				{
-					sw.WriteLine(item);
+					
+					sw.WriteLine($"{item.SerialNumber} {item.PantType} {item.Material} {new PantValues().GetPantValue(item.PantType)}");
 				}
+
+				sw.WriteLine($"Total price: \n{CalculateTotalPrice()}");
 			}
 		}
 
-		internal string[] WriteToScreen()
+		internal void WriteToScreen()
 		{
-			string totalPantA = _pantModel.GetTotalOfType<PantA>().Count.ToString();
-			string totalPantB = _pantModel.GetTotalOfType<PantB>().Count.ToString();
-			string totalPantC = _pantModel.GetTotalOfType<PantC>().Count.ToString();
-
-			string[] Manike = [totalPantA, totalPantB, totalPantC];
-
-			return Manike;
-
+			while(true)
+			{
+				string totalPantA = _pantModel.GetTotalOfType<PantA>().ToString();
+				string totalPantB = _pantModel.GetTotalOfType<PantB>().ToString();
+				string totalPantC = _pantModel.GetTotalOfType<PantC>().ToString();
+			}
         }
+
+		internal float CalculateTotalPrice()
+		{
+			float PantAValue = new PantValues().GetPantValue('A');
+			float PantBValue = new PantValues().GetPantValue('B');
+			float PantCValue = new PantValues().GetPantValue('C');
+
+			float TotalAValue = _pantModel.GetTotalOfType<PantA>() * PantAValue;
+			float TotalBValue = _pantModel.GetTotalOfType<PantB>() * PantBValue;
+			float TotalCValue = _pantModel.GetTotalOfType<PantC>() * PantCValue;
+
+			float TotalPrice = TotalAValue + TotalBValue + TotalCValue;
+			return TotalPrice;
+		}
 	}
 }

@@ -7,9 +7,6 @@ namespace GUI_Flaskeautomaten.Classes.Model.Pant_inheritance
 	{
 		#region Fields
 
-		// The value of the pant (deposit).
-		private protected float _pantValue;
-
 		// The material of the pant item (e.g., plastic, glass).
 		private protected string _material = "";
 
@@ -19,15 +16,12 @@ namespace GUI_Flaskeautomaten.Classes.Model.Pant_inheritance
 		// The type of beverage the pant item contains (e.g., soda, beer).
 		private protected string _beverageType = "";
 
+		// Unique serial number for the beverage
+		private protected string _serialNumber = "";
+
 		#endregion
 
 		#region IPant Implementation
-
-		// Gets the value of the pant.
-		public float PantValue
-		{
-			get { return _pantValue; }
-		}
 
 		// Gets or sets the material of the pant item.
 		public string Material
@@ -47,6 +41,12 @@ namespace GUI_Flaskeautomaten.Classes.Model.Pant_inheritance
 		{
 			get { return _beverageType; }
 			set { _beverageType = value; }
+		}
+
+		// Gets the serial number for the beverage
+		public string SerialNumber
+		{
+			get { return _serialNumber; }
 		}
 
 		#endregion

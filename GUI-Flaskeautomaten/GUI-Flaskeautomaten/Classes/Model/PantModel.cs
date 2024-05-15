@@ -1,4 +1,5 @@
 ﻿using GUI_Flaskeautomaten.Classes.Model.Pant_inheritance;
+using System.Collections.Concurrent;
 
 namespace GUI_Flaskeautomaten.Classes
 {
@@ -6,13 +7,13 @@ namespace GUI_Flaskeautomaten.Classes
 	internal class PantModel
 	{
 		#region Fields
-		private List<Pant> _pantList; // List to store items with pant-related information
+		private ConcurrentBag<Pant> _pantList; // List to store items with pant-related information
 		#endregion
 
 		#region Constructors
 		internal PantModel()
 		{
-			_pantList = new List<Pant>(); // Initialize the list in the constructor
+			_pantList = new ConcurrentBag<Pant>(); // Initialize the list in the constructor
 		}
 		#endregion
 
@@ -24,16 +25,18 @@ namespace GUI_Flaskeautomaten.Classes
 		}
 
 		// Method to retrieve all items with pant-related information
-		internal List<Pant> GetTotalItems()
+		internal ConcurrentBag<Pant> GetTotalItems()
 		{
 			return _pantList;
 		}
 
 		// Method to retrieve all items of a specific type with pant-related information
-		public List<T> GetTotalOfType<T>() where T : Pant
+		internal int GetTotalOfType<T>() where T : Pant
 		{
-			return _pantList.OfType<T>().ToList();
+			return _pantList.OfType<T>().ToList().Count;
 		}
+
+
 		#endregion
 	}
 }
