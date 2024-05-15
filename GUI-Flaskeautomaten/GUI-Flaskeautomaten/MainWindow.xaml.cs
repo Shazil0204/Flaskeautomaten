@@ -116,9 +116,9 @@ namespace GUI_Flaskeautomaten
 			float totalPrice = outputController.CalculateTotalPrice();
 
 			// Update text boxes with pant totals and total price
-			Pant_A_Text.Text = _pantModel.GetTotalOfType<PantA>().ToString();
-			Pant_B_Text.Text = _pantModel.GetTotalOfType<PantB>().ToString();
-			Pant_C_Text.Text = _pantModel.GetTotalOfType<PantC>().ToString();
+			Pant_A_Text.Text = $"x{_pantModel.GetTotalOfType<PantA>()}";
+			Pant_B_Text.Text = $"x{_pantModel.GetTotalOfType<PantB>()}";
+			Pant_C_Text.Text = $"x{_pantModel.GetTotalOfType<PantC>()}";
 			Total_Text.Text = $"{totalPrice} DKK";
 		}
 

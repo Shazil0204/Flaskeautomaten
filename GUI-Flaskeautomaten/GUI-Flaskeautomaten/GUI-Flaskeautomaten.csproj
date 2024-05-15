@@ -12,8 +12,6 @@
   <ItemGroup>
     <None Remove="Classes\Model\NewFile1.txt" />
     <None Remove="Classes\Model\NewFile2.txt" />
-    <None Remove="Images\Barcode.png" />
-    <None Remove="Images\BarcodeIMG.png" />
     <None Remove="Images\Beer.png" />
     <None Remove="Images\coca-cola-l.png" />
     <None Remove="Images\image_2024-05-14_113024687-removebg-preview.png" />
@@ -31,12 +29,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="Images\Barcode.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="Images\BarcodeIMG.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
     <Resource Include="Images\PantA.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>

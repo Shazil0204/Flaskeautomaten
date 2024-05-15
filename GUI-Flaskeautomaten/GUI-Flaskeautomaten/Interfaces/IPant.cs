@@ -26,6 +26,8 @@ namespace GUI_Flaskeautomaten.Interfaces
 		/// Property to get the pant type of the item
 		/// </summary>
 		char PantType { get; } 
+
+		string SerialNumber { get; }
 		#endregion
 	}
 }

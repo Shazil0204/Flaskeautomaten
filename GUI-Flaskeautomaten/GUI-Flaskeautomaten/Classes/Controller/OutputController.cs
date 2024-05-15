@@ -23,7 +23,7 @@ namespace GUI_Flaskeautomaten.Classes
 
         #region Methods
 		/// <summary>
-		/// This will create a File for use like a recipt where you can see all the items user have insert into the machines
+		/// This will create a File for use like a receipt where you can see all the items user have insert into the machines
 		/// </summary>
 		/// <param name="obj"></param>
         internal void WriteReceipt(object obj)

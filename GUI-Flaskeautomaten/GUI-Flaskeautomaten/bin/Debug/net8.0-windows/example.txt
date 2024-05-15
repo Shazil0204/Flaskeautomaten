@@ -1,2 +1,9 @@
+2308-810681 C Plastic 3
+2401-179847 B Plastic 1,5
+2403-601817 B Plastic 1,5
+2409-724460 A Glass 1
+2311-759089 A Glass 1
+2308-316527 B Metal 1,5
+2407-517331 C Plastic 3
 Total price: 
-0
+12,5
